@@ -18,9 +18,10 @@ function calculator(){
     //calculate (days*fee)*dvd
     //gives us total of one dvd for fee and days and then multiplies that total for each dvd late
     let dvdTotal = dvdCount*.50*dvdDays;
-
+    let grandTotal = dvdTotal + bookTotal;
+    grandTotal = grandTotal.toFixed(2);
     dvdTotal = dvdTotal.toFixed(2);
     bookTotal = bookTotal.toFixed(2);
 
-    alert(`You owe $${dvdTotal} for DVDs and $${bookTotal} for books so a total of $${dvdTotal+bookTotal} for both`)
+    alert(`You owe $${dvdTotal} for DVDs and $${bookTotal} for books so a total of $${grandTotal} for both`)
 }
