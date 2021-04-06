@@ -1,14 +1,20 @@
-function calculator(){
+$(document).ready(function () {
+    $("#newNameThatWorksPlease").on("click",libraryCalculation);
+});
+
+
+
+function libraryCalculation(){
     //gather info from person
 
     //ask how many dvds they are returning
-    let dvdCount = parseInt(prompt("How many DVDs are you returning?"))
+    let dvdCount = parseInt($("#dvdCount").val());
     //ask how many books they are returning
-    let bookCount = parseInt(prompt("How many books are you returning?"))
+    let bookCount = parseInt($("#bookCount").val());
     //ask how many days late with dvd
-    let dvdDays = parseInt(prompt("How many days late are the DVDs you are returning?"))
+    let dvdDays = parseInt($("#dvdDays").val());
     //ask how many days late with book
-    let bookDays = parseInt(prompt("How many days late are the books you are returning?"))
+    let bookDays = parseInt($("#bookDays").val());
 
 
     //calculate (days*fee)*book
@@ -23,5 +29,4 @@ function calculator(){
     dvdTotal = dvdTotal.toFixed(2);
     bookTotal = bookTotal.toFixed(2);
 
-    alert(`You owe $${dvdTotal} for DVDs and $${bookTotal} for books so a total of $${grandTotal} for both`)
-}
+    $("#libraryOutput").text(`You owe $${dvdTotal} for DVDs and $${bookTotal} for books so a total of $${grandTotal} for both`);}

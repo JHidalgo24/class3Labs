@@ -3,17 +3,57 @@
 <head>
     <meta charset="UTF-8">
     <title>Class 3 Labs</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <script src="library.js"></script>
     <script src="pizza.js"></script>
     <link rel="stylesheet" href="fancy.css">
 </head>
 <body>
+
 <h1>Waukesha Library</h1>
 
-<button onclick="calculator()">Library Calculation</button>
-<h1>Pizza Time</h1>
-<button onclick="pizzaCalculation()">Pizza Calculation</button>
+<label for="dvdCount">DVDs Checked Out</label> <input type="number" id="dvdCount">
 
+<br>
+
+
+<label for="bookCount">Books Checked Out</label>  <input type="number" id="bookCount">
+
+<br>
+
+<label for="dvdDays">Dvd Day's Out</label>  <input type="number" id="dvdDays">
+
+<br>
+
+
+<label for="bookDays">Book Days Out</label>  <input type="number" id="bookDays">
+
+
+<br>
+
+<button id="newNameThatWorksPlease">Calculation</button>
+
+<br>
+
+<p id="libraryOutput"></p>
+
+<br>
+
+<h1>Pizza Order</h1>
+
+<br>
+
+<label for="coworkerTotal">Amount of Coworkers</label> <input type="number" id="coworkerTotal">
+
+<br>
+
+<label for="toppingsAmount">Topping Amount </label>  <input type="number" id="toppingsAmount">
+
+<br>
+
+<button id="pizzaButton">Pizza Total Calculation</button>
+
+<p id="pizzaOutput"></p>
 
 </body>
 </html>
